@@ -8,21 +8,34 @@ This is a great construction for a traditional website where the client do an ac
 Since HTTP is stateless, every single request must have some information about what it want to do, where it should be done and who is doing it and so on.
 All this information that needs to be send every time, adds up to alot of bytes which affects the speed of the request - response time.
 
-![http]
- 
- 
- 
-## 
-## 
-## 
+![HTTP]
+
+
+
+
 #### Explain polling and long-polling strategies, their pros and cons.
-TODO
+
+###### Polling
+
+
+![Polling]
+
+###### Long-polling
+
+
+![Long-polling]
 
 #### What is HTTP streaming, SSE (Server sent events)?
-TODO
+
+
+
+![HTTPStreaming]
 
 #### What is WebSocket protocol, how is it different from HTTP communication, what advantages it has over HTTP?
-TODO
+
+
+
+![WebSockets]
 
 #### Explain what the WebSocket Protocol brings to the Web-world.
 TODO
@@ -47,4 +60,8 @@ TODO
 
 
 
-[http]: http://i.imgur.com/Nf7V4Rv.png "HTTP"
+[HTTP]: http://i.imgur.com/qRk5AzD.png "HTTP"
+[Polling]: http://i.imgur.com/Nf7V4Rv.png "Polling"
+[Long-polling]: http://i.imgur.com/RaYapa0.png "Long-Polling"
+[HTTPStreaming]: http://i.imgur.com/xC9gigZ.png "HTTP-Streaming"
+[WebSockets]: http://i.imgur.com/uXlugH1.png "WebSockets"
