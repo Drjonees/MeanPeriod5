@@ -9,11 +9,12 @@ Since HTTP is stateless, every single request must have some information about w
 All this information that needs to be send every time, adds up to alot of bytes which affects the speed of the request - response time.
 
 ![http]
-
+ 
+ 
+ 
 ## 
 ## 
-
-
+## 
 #### Explain polling and long-polling strategies, their pros and cons.
 TODO
 
