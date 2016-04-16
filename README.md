@@ -51,7 +51,39 @@ Pros: Real time traffic from server to client AND from client to server. CORS is
 Cons: Not all browsers support websockets yet.
 
 #### Explain and demonstrate the process of WebSocket communication - From connecting client to server, through sending messages, to closing connection.
-TODO
+The client estabilshes a WebSocket connection through a Websocket handshake, by sending a regular HTTP request to the server. In the header of this request, there's an Upgrade header which tells the server that the client waats to establish a WebSocket connection.
+```
+GET ws://websocket.example.com/ HTTP/1.1
+Origin: http://example.com
+Connection: Upgrade
+Host: websocket.example.com
+Upgrade: websocket
+```
+
+
+If the server supports WebSocket connections, it sends back a response with an Upgrade header.
+```
+HTTP/1.1 101 WebSocket Protocol Handshake
+Date: Wed, 16 Oct 2013 10:07:34 GMT
+Connection: Upgrade
+Upgrade: WebSocket
+``` 
+Now that the handshake is complete, all traffic from here on will be using TCP instead of HTTP. Now both the client and server can send data to each other.
+The transfers no longer need all the overhead that a HTTP request normally would, so even though there's still a 4-12 bytes overhead about the data send with the payload, the overall size of the transfer is significantly reduced.
+
+The websocket object has multiple events and methods that we need to use:
+
+###### Events:
+socket.onopen - Occurs when the connection is established.
+socket.onmessage - Occurs when receiving data.
+socket.onerror - Occurs when there's any error in the communication.
+socker.onclose - Occurs when the connection is closed.
+
+###### Methods:
+socket.send(data) - Sends the data through the connection.
+socket.close() - Closes the connection.
+
+TODO: Chat Example
 
 #### What's the advantage of using libraries like Socket.IO, Sock.JS, WS, over pure WebSocket libraries in the backend and standard APIs on frontend? Which problems do they solve?
 There are multiple reasons of why it can be helpful to use a library for handling the websockets:
