@@ -10,6 +10,9 @@ All this information that needs to be send every time, adds up to alot of bytes 
 
 ![http]
 
+## 
+## 
+
 
 #### Explain polling and long-polling strategies, their pros and cons.
 TODO
