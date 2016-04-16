@@ -43,4 +43,4 @@ TODO
 
 
 
-[http]: http://imgur.com/Nf7V4Rv "HTTP"
+[http]: http://i.imgur.com/Nf7V4Rv.png "HTTP"
